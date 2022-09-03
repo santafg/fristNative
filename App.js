@@ -17,15 +17,6 @@ export default function App() {
   const [enteredGoalText, setEnteredGoalText] = useState("");
   const [courseGoals, setCourseGoals] = useState([]);
 
-  const handleGoalInput = (enteredText) => {
-    // console.log(enteredText);
-    setEnteredGoalText(enteredText);
-  };
-  const handleAddGoal = () => {
-    // console.log("goal", enteredGoalText);
-    setCourseGoals((currentGoals) => [...currentGoals, enteredGoalText]);
-  };
-
   const handleDeleteGoal = (index) => {
     console.log("delete", index);
     setCourseGoals((currentGoals) =>
