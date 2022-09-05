@@ -7,6 +7,7 @@ import {
   TextInput,
   ScrollView,
   FlatList,
+  Image,
 } from "react-native";
 import First from "./learn/First";
 import { useState } from "react";
@@ -53,6 +54,12 @@ export default function App() {
                 handleDeleteGoal={handleDeleteGoal}
               />
             )}
+          />
+        </View>
+        <View style={{ borderWidth: 2 }}>
+          <Image
+            style={{ width: 66, height: 56 }}
+            source={require("./assets/download.png")}
           />
         </View>
       </View>
